@@ -8,4 +8,6 @@ import (
 
 func RegisterRoutes(server *gin.Engine) {
 	server.GET("/books", handlers.GetBooks)
+	server.GET("/books/:id", handlers.GetBook)
+	server.POST("/books", handlers.AddBook)
 }
